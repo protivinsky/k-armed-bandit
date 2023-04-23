@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Armed Bandit</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/script.js"></script>
+</head>
+<body>
+    <h1>K-Armed Bandit Showcase</h1>
+    <div id="bandits">
+        <div class="bandit" id="A">
+            <div class="bandit-rectangle"></div>
+            <button onclick="pullBandit('A')">Pull Bandit A</button>
+        </div>
+        <div class="bandit" id="B">
+            <div class="bandit-rectangle"></div>
+            <button onclick="pullBandit('B')">Pull Bandit B</button>
+        </div>
+        <div class="bandit" id="C">
+            <div class="bandit-rectangle"></div>
+            <button onclick="pullBandit('C')">Pull Bandit C</button>
+        </div>
+    </div>
+    <p>Round played: <span id="current-round">0</span> / <span id="total-rounds"></span></p>
+    <p>Total score: <span id="total-score">0</span></p>
+</body>
+</html>
